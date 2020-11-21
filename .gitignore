@@ -105,3 +105,10 @@ venv.bak/
 
 # PyCharm
 .idea
+
+# Data
+*.ckpt
+*.tar.gz
+
+# Vim
+*.swp
