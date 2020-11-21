@@ -500,9 +500,9 @@ def train(rank, epoch, model, device, train_loader, optimizer, scheduler,
                 elapsed_time = logger.elapsed_time
                 print('epoch: {} [{}/{} ({:.0f}%)]\tloss: {:.6f}, '
                       'accuracy: {:.0f}/{} ({:.2f}%), '
-                      'elapsed: {:.1f}s, iters/sec: {:.2f}'.format(
+                      'elapsed: {:.1f}s, iters/sec: {:.2f}, secs/iter: {:.3f}'.format(
                         epoch, total_data_size, epoch_size, 100. * (batch_idx + 1) / num_iters_in_epoch,
-                        loss, total_correct, total_data_size, accuracy, elapsed_time, iteration/elapsed_time))
+                        loss, total_correct, total_data_size, accuracy, elapsed_time, iteration/elapsed_time, elapsed_time/iteration))
 
                 lr = optimizer.param_groups[0]['lr']
                 m = optimizer.param_groups[0].get('momentum', 0)

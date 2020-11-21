@@ -1,5 +1,5 @@
 {
-  "dataset": "ImageNet10",
+  "dataset": "ImageNet",
   "epochs": 30,
   "batch_size": 32,
   "val_batch_size": 32,

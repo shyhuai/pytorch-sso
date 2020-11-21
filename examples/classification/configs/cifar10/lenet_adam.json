@@ -1,6 +1,6 @@
 {
     "dataset": "CIFAR-10",
-    "epochs": 100,
+    "epochs": 50,
     "batch_size": 128,
     "val_batch_size": 128,
     "random_crop": false,
